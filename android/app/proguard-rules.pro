@@ -1,0 +1,2 @@
+-keepclassmembernames class com.btcc.app.** { *; }
+-keepclassmembernames class sq.flutter.tflite.** {*;}

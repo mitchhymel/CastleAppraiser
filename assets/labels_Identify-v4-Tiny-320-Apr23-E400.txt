@@ -1,0 +1,4 @@
+square_tile
+royal_attendant
+bonus_card
+throne_room

@@ -1,0 +1,357 @@
+import 'package:hive/hive.dart';
+
+part 'tile_id.g.dart';
+
+// IF(ISNUMBER(SEARCH(",", val)), prev+1, prev))
+@HiveType(typeId: 2)
+enum TileId {
+
+// Extra
+@HiveField(0) EMPTY,
+@HiveField(1) PLACEHOLDER,
+
+// Royal Attendant
+@HiveField(2) RoyalAttendantJester,
+@HiveField(3) RoyalAttendantJester2,
+@HiveField(4) RoyalAttendantTaylor,
+@HiveField(5) RoyalAttendantTaylor2,
+@HiveField(6) RoyalAttendantPainter,
+@HiveField(7) RoyalAttendantPainter2,
+@HiveField(8) RoyalAttendantKnight,
+@HiveField(9) RoyalAttendantKnight2,
+
+// Bonus Card
+@HiveField(10) BCPerRoomsAboveLevelThree,
+@HiveField(11) BCPerTotalOrdinallySurrounded,
+@HiveField(12) BCPerRoyalAttendant,
+@HiveField(13) BCPerUtility,
+@HiveField(14) BCPerOutdoor,
+@HiveField(15) BCPerFiveOfSameType,
+@HiveField(16) BCPerDownstairs,
+@HiveField(17) BCPerUniqueRoomAroundThroneRoom,
+@HiveField(18) BCPerThreeOfSameType,
+@HiveField(19) BCPerTotalCardinallySurrounded,
+@HiveField(20) BCPerLiving,
+@HiveField(21) BCPerRoomsOrdinallyAroundThroneRoom,
+@HiveField(22) BCPerTotalWidth,
+@HiveField(23) BCPerRoomsBelowGround,
+@HiveField(24) BCPerSpecial,
+@HiveField(25) BCPerCorridor,
+@HiveField(26) BCPerTotalHeight,
+@HiveField(27) BCPerSleeping,
+@HiveField(28) BCPerFood,
+@HiveField(29) BCPerRegularAndSpecialtyRoomType,
+
+// Grand Foyer
+@HiveField(30) GrandFoyer,
+@HiveField(31) GrandFoyer2,
+@HiveField(32) GrandFoyer3,
+@HiveField(33) GrandFoyer4,
+@HiveField(34) GrandFoyer5,
+
+// Tower
+@HiveField(35) Tower,
+@HiveField(36) Tower2,
+@HiveField(37) Tower3,
+@HiveField(38) Tower4,
+@HiveField(39) Tower5,
+
+// Fountain
+@HiveField(40) Fountain,
+@HiveField(41) Fountain2,
+@HiveField(42) Fountain3,
+@HiveField(43) Fountain4,
+@HiveField(44) Fountain5,
+
+// Throne Room
+@HiveField(45) ThroneRoomPerCorridorDownstairs,
+@HiveField(46) ThroneRoomPerLivingCorridor,
+@HiveField(47) ThroneRoomPerLivingSleeping,
+@HiveField(48) ThroneRoomPerUtilityFood,
+@HiveField(49) ThroneRoomPerCorridorFood,
+@HiveField(50) ThroneRoomPerUtilitySleeping,
+@HiveField(51) ThroneRoomPerFoodSleeping,
+@HiveField(52) DONT_USE_STR8,
+
+// Corridor
+@HiveField(53) BetweenTwoRooms,
+@HiveField(54) DeadEnd,
+@HiveField(55) EchoChamber,
+@HiveField(56) EscapeRoom,
+@HiveField(57) GreatHall,
+@HiveField(58) HallOfCreakingFloors,
+@HiveField(59) HallOfPaintings,
+@HiveField(60) HallOfSculptures,
+@HiveField(61) HallOfWindows,
+@HiveField(62) HallOfDoors,
+@HiveField(63) HallOfEverClosingWalls,
+@HiveField(64) HallOfGhosts,
+@HiveField(65) HallOfKnights,
+@HiveField(66) HallOfMirrors,
+@HiveField(67) HallOfPortraits,
+@HiveField(68) HallOfPuzzledFloors,
+@HiveField(69) LockdownRoom,
+@HiveField(70) PacingHall,
+@HiveField(71) Promenade,
+@HiveField(72) Purgatory,
+@HiveField(73) HiddenPassage,
+
+//Downstairs
+@HiveField(74) Laboratory,
+@HiveField(75) HiddenLair,
+@HiveField(76) SubterraneanTunnel,
+@HiveField(77) GunpowderRoom,
+@HiveField(78) HiddenEntrance,
+@HiveField(79) Dungeon,
+@HiveField(80) MoldRoom,
+@HiveField(81) FungusRoom,
+@HiveField(82) WineCellar,
+@HiveField(83) SnakePit,
+@HiveField(84) PaddedRoom,
+@HiveField(85) JewelRoom,
+@HiveField(86) KnightRoom,
+@HiveField(87) VenusGrotto,
+@HiveField(88) Armory,
+@HiveField(89) TheHole,
+@HiveField(90) QuietRoom,
+@HiveField(91) TreasureRoom,
+@HiveField(92) PitOfDespair,
+@HiveField(93) Crypt,
+@HiveField(94) SpyRoom,
+
+//Food
+@HiveField(95) Scullery,
+@HiveField(96) Bakery,
+@HiveField(97) Buttery,
+@HiveField(98) BreakfastNook,
+@HiveField(99) Pantry,
+@HiveField(100) ChocolateRoom,
+@HiveField(101) SpiceRoom,
+@HiveField(102) Kitchen,
+@HiveField(103) DiningRoom,
+@HiveField(104) SauerkrautRoom,
+@HiveField(105) MorningTeaRoom,
+@HiveField(106) Brewery,
+@HiveField(107) IceHouse,
+@HiveField(108) CutleryRoom,
+@HiveField(109) MeatLocker,
+@HiveField(110) BrandyRoom,
+@HiveField(111) SiegeFoodStorage,
+@HiveField(112) ChinaRoom,
+@HiveField(113) WineRoom,
+@HiveField(114) AfternoonTeaRoom,
+@HiveField(115) Crepery,
+
+//Living
+@HiveField(116) DrawingRoom,
+@HiveField(117) HarpRoom,
+@HiveField(118) Gallery,
+@HiveField(119) ReceptionRoom,
+@HiveField(120) WaitingRoom,
+@HiveField(121) HatRoom,
+@HiveField(122) CapeRoom,
+@HiveField(123) TaxidermyShowroom,
+@HiveField(124) Vestibule,
+@HiveField(125) Parlor,
+@HiveField(126) FirePlace,
+@HiveField(127) Observatory,
+@HiveField(128) RugRoom,
+@HiveField(129) SittingRoom,
+@HiveField(130) ReadingRoom,
+@HiveField(131) MeditationRoom,
+@HiveField(132) Library,
+@HiveField(133) Study,
+@HiveField(134) TapestryRoom,
+@HiveField(135) MapRoom,
+@HiveField(136) Salon,
+
+//Outdoor
+@HiveField(137) Aviary,
+@HiveField(138) WinterGarden,
+@HiveField(139) ChickenCoop,
+@HiveField(140) ButterflyGarden,
+@HiveField(141) ArcheryRange,
+@HiveField(142) WalkingPath,
+@HiveField(143) Guardhouse,
+@HiveField(144) Stables,
+@HiveField(145) Sty,
+@HiveField(146) VegetableGarden,
+@HiveField(147) FishPond,
+@HiveField(148) PumpkinGarden,
+@HiveField(149) FirewoodStorage,
+@HiveField(150) Vineyard,
+@HiveField(151) SwimmingHole,
+@HiveField(152) FlowerGarden,
+@HiveField(153) FrenchGazebo,
+@HiveField(154) Biergarten,
+@HiveField(155) Terrace,
+@HiveField(156) GrandBalcony,
+@HiveField(157) TurtlePond,
+
+//Sleeping
+@HiveField(158) PuppyRoom,
+@HiveField(159) ChildrensRoom,
+@HiveField(160) BlanketRoom,
+@HiveField(161) NapRoom,
+@HiveField(162) Solar,
+@HiveField(163) InLawSuite,
+@HiveField(164) ServantsQuarters,
+@HiveField(165) Nursery,
+@HiveField(166) PrincessChambers,
+@HiveField(167) RabbitRoom,
+@HiveField(168) DreamingRoom,
+@HiveField(169) DressingRoom,
+@HiveField(170) TassoRoom,
+@HiveField(171) GuestBedroom,
+@HiveField(172) BunkRoom,
+@HiveField(173) KingsChambers,
+@HiveField(174) QueensChambers,
+@HiveField(175) MidnightRoom,
+@HiveField(176) HibernationChamber,
+@HiveField(177) PillowRoom,
+@HiveField(178) PrincesChambers,
+
+//Utility
+@HiveField(179) GlassmakingRoom,
+@HiveField(180) WashRoom,
+@HiveField(181) GameStorage,
+@HiveField(182) CoatRoom,
+@HiveField(183) MudRoom,
+@HiveField(184) PanicRoom,
+@HiveField(185) CrownStorage,
+@HiveField(186) Sauna,
+@HiveField(187) BroomCloset,
+@HiveField(188) Kennel,
+@HiveField(189) ToolRoom,
+@HiveField(190) RepairShop,
+@HiveField(191) Schoolhouse,
+@HiveField(192) Kittenry,
+@HiveField(193) KeyRoom,
+@HiveField(194) ShieldRoom,
+@HiveField(195) ScytheRoom,
+@HiveField(196) PowderRoom,
+@HiveField(197) Dumbwaiter,
+@HiveField(198) LaundryRoom,
+@HiveField(199) TorchStorage,
+
+
+///
+/// Expansion tiles
+///
+
+// Throne rooms
+@HiveField(200) ThroneRoomPerActivityOutdoor,
+
+// Bonus Cards
+@HiveField(201) BCPerActivity, // BC21
+@HiveField(202) BCPerSpecialSet,
+@HiveField(203) BCPerSecret,
+@HiveField(204) BCPerSpecialInNeighborCastles,
+@HiveField(205) BCPerMirror,
+@HiveField(206) BCPerPainting,
+@HiveField(207) BCPerSwords,
+@HiveField(208) BCPerTorch,
+
+// Activity
+@HiveField(217) ChessRoom,
+@HiveField(218) TrainRoom,
+@HiveField(219) Oratory,
+@HiveField(220) PrintingRoom,
+@HiveField(221) DancingHall,
+@HiveField(222) ClimbingRoom,
+@HiveField(223) DraftingRoom,
+@HiveField(224) StoryRoom,
+@HiveField(225) GameRoom,
+@HiveField(226) DartsRoom,
+@HiveField(227) PianoRoom,
+@HiveField(228) BoxingRoom,
+@HiveField(229) BilliardsRoom,
+@HiveField(230) TableTennis,
+@HiveField(231) BowlingAlley,
+@HiveField(232) Theatre,
+@HiveField(233) FluteRoom,
+@HiveField(234) SingersChamber,
+@HiveField(235) EscapeRoomActivity,
+@HiveField(236) PuzzleRoom,
+@HiveField(237) TrumpetRoom,
+@HiveField(238) PlayRoom,
+@HiveField(239) FestivusRoom,
+@HiveField(240) PaintingRoom,
+
+// Secret
+@HiveField(241) RideTheDumbWaiter,
+@HiveField(242) WithinTheWalls,
+@HiveField(243) BehindTheBookCase,
+@HiveField(244) ClimbTheLadder,
+@HiveField(245) FindTheTrapDoor,
+@HiveField(246) OppositeTheFireplace,
+@HiveField(247) ThroughTheWardrobe,
+@HiveField(248) AmongTheCurtains,
+@HiveField(249) HiddenCompartment,
+@HiveField(250) InTheRafters,
+@HiveField(251) OutTheWindow,
+@HiveField(252) AroundTheCorner,
+@HiveField(253) PushTheThirdStone,
+@HiveField(254) BeyondThePail,
+@HiveField(255) AmidstThePlants,
+@HiveField(256) AtTheEndOfTheRainbow,
+
+// Corridor
+@HiveField(257) Colonnade,
+@HiveField(258) VestibuleCorridor,
+@HiveField(259) FlyingButtresses,
+
+// Downstairs
+@HiveField(260) Bath,
+@HiveField(261) Hideout,
+@HiveField(262) CrystalCave,
+
+// Food
+@HiveField(263) Jammery,
+@HiveField(264) MillRoom,
+@HiveField(265) Granary,
+
+// Living
+@HiveField(266) ClubRoom,
+@HiveField(267) ChaiseRoom,
+@HiveField(268) Lounge,
+@HiveField(269) SaxophoneRoom,
+
+// Outdoor
+@HiveField(270) HorseshoePit,
+@HiveField(271) BocceCourt,
+@HiveField(272) TennisCourt,
+
+// Sleeping
+@HiveField(273) SleepoverRoom,
+@HiveField(274) Loft,
+@HiveField(275) TentRoom,
+
+// Utility
+@HiveField(276) ArtSupplies,
+@HiveField(277) BallStorage,
+@HiveField(278) PartyStorage,
+@HiveField(279) DiceTowerRoom,
+
+
+
+
+// Ballrooms
+@HiveField(280) BallRoomPerActivity,
+@HiveField(281) BallRoomPerCorridor,
+@HiveField(282) BallRoomPerFood,
+@HiveField(283) BallRoomPerDownstairs,
+@HiveField(284) BallRoomPerSleeping,
+@HiveField(285) BallRoomPerOutdoor,
+@HiveField(286) BallRoomPerLiving,
+@HiveField(287) BallRoomPerUtility,
+@HiveField(288) BallRoomPerActivity2,
+@HiveField(289) BallRoomPerCorridor2,
+@HiveField(290) BallRoomPerFood2,
+@HiveField(291) BallRoomPerDownstairs2,
+@HiveField(292) BallRoomPerSleeping2,
+@HiveField(293) BallRoomPerOutdoor2,
+@HiveField(294) BallRoomPerLiving2,
+@HiveField(295) BallRoomPerUtility2,
+
+}

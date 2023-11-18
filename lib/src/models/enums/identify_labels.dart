@@ -1,0 +1,6 @@
+enum IdentifyLabels {
+  SQUARE_TILE,
+  ROYAL_ATTENDANT,
+  BONUS_CARD,
+  THRONE_ROOM,
+}

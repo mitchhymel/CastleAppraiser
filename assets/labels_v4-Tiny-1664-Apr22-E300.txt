@@ -1,0 +1,261 @@
+Fountain
+RAM
+RAT
+RAS
+Tower
+BCregular
+BCsleeping
+BCfood
+BCcorridor
+BCshield
+BCsquared
+BCplused
+BCheight
+BCwidth
+BClevel3
+BCRA
+BCthroneenclosed
+BCtriplet
+BCquint
+BCbelow
+BCutility
+BCdownstairs
+BCliving
+BCoutdoor
+BCthronedifferent
+Sty
+Waiting Room
+Hall Of Puzzled Floors
+Sauerkraut Room
+Pit Of Despair
+Repair Shop
+Tasso Room
+Bunk Room
+Knight Room
+Morning Tea Room
+Promenade
+Gallery
+Guardhouse
+Kennel
+Pantry
+Aviary
+Hat Room
+Queen's Chambers
+Venus Grotto
+Hall Of Paintings
+Broom Closet
+Dungeon
+Vineyard
+Vestibule
+Bakery
+Crown Storage
+Between Two Rooms
+Children's Room
+Escape Room
+Nap Room
+Sauna
+Pumpkin Garden
+Kitchen
+Hidden Entrance
+Salon
+Mold Room
+Winter Garden
+Hall Of Sculptures
+Mud Room
+Brewery
+Drawing Room
+Puppy Room
+Glassmaking Room
+Pillow Room
+Chocolate Room
+Hall of Portraits
+Reception Room
+Walking Path
+The Hole
+Key Room
+Solar
+Biergarten
+Subterranean Tunnel
+Sitting Room
+Dead End
+Wine Room
+Terrace
+Library
+Great Hall
+Guest Bedroom
+Brandy Room
+Padded Room
+Scythe Room
+Turtle Pond
+Map Room
+Hall of Doors
+Crepery
+Jewel Room
+In-Law Suite
+Shield Room
+Hibernation Chamber
+Lockdown Room
+Grand Balcony
+China Room
+Reading Room
+Kittenry
+Armory
+Cutlery Room
+Prince's Chambers
+Wine Cellar
+Fish Pond
+Hall of Ghosts
+Schoolhouse
+Study
+Grand Foyer
+RAP
+Hall of Knights
+Panic Room
+Blanket Room
+Parlor
+Snake Pit
+Chicken Coop
+Dining Room
+Vegetable Garden
+Crypt
+Hall of Ever-Closing Walls
+Taxidermy Showroom
+Scullery
+Tool Room
+Midnight Room
+Laboratory
+Rug Room
+Archery Range
+Meat Locker
+Breakfast Nook
+Coat Room
+Stables
+Swimming Hole
+WashRoom
+Hall of Mirrors
+Spy Room
+Hall of Windows
+King's Chambers
+Echo Chamber
+Quiet Room
+Laundry Room
+Treasure Room
+Observatory
+Hidden Lair
+Cape Room
+Servant's Quarters
+Hidden Passage
+Afternoon Tea Room
+Dreaming Room
+Hall Of Creaking Floors
+Siege Food Storage
+Dressing Room
+Princess' Chambers
+Rabbit Room
+Tapestry Room
+Nursery
+FirePlace
+Flower Garden
+Butterfly Garden
+Ice House
+Gunpowder Room
+Firewood Storage
+French Gazebo
+Buttery
+Meditation Room
+Fungus Room
+Purgatory
+Spice Room
+Torch Storage
+Powder Room
+Game Storage
+Harp Room
+Pacing Hall
+Dumbwaiter
+TRLS
+TRLC
+TRUS
+TRCD
+TRFS
+TRUF
+TRCF
+Train Room
+Bowling Alley
+Chess Room
+Boxing Room
+Dice Tower Room
+BCperset
+BCsecret
+Ball Storage
+Piano Room
+Bath
+Party Storage
+Saxophone Room
+Printing Room
+Oratory
+Darts Room
+Through the Wardrobe
+Opposite the Fireplace
+In the Rafters
+Granary
+Table Tennis
+Jammery
+Billiards Room
+Crystal Cave
+Art Supplies
+At the End of the Rainbow
+TRAO
+Mill Room
+Hideout
+BCtorch
+BCneighbor
+Ride the Dumbwaiter
+Within the Walls
+Climbing Room
+Tent Room
+Chaise Room
+Lounge
+Climb the Ladder
+Find the Trap Door
+Amidst the Plants
+Club Room
+Beyond the Pail
+Push the Third Stone
+BRa
+BRc
+BRf
+Behind the Bookcase
+BRl
+BRd
+BRs
+Hidden Compartment
+BCpainting
+BCmirror
+BRu
+Out the Window
+Around the Corner
+BRo
+Among the Curtains
+Festivus Room
+Singer's Chamber
+Game Room
+Flying Buttresses
+Dancing Hall
+Playroom
+Trumpet Room
+Painting Room
+Loft
+Flute Room
+Escape Room Act
+Bocce Court
+Colonnade
+Puzzle Room
+Story Room
+Drafting Room
+BCactivity
+BCsword
+Horseshoe Pit
+Theatre
+Vestibule Cor
+Tennis Court
+Sleepover Room
