@@ -24,7 +24,6 @@ jobs:
           flutter-version: '2.1.0-10.0.pre'
 
       - name: Install dependencies
-        working-directory: ./app
         run: flutter pub get
 
       # Consider passing '--fatal-infos' for slightly stricter analysis.
@@ -36,7 +35,6 @@ jobs:
       # package:test for this step to succeed. Note that Flutter projects will
       # want to change this to 'flutter test'.
       - name: Run tests
-        working-directory: ./app
         run: flutter test
 
       - name: Build android
