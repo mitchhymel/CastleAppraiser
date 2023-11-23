@@ -19,7 +19,8 @@ dependencies:
   tflite:
 #    path: '..\..\..\OtherProjects\flutter_tflite'
     git:
-      url: git://github.com/mitchhymel/flutter_tflite.git
+      url: https://github.com/mitchhymel/flutter_tflite.git
+      ref: master
   permission_handler: ^8.0.1
   path_provider: ^2.0.2
   provider: ^5.0.0
