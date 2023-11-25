@@ -63,10 +63,14 @@ jobs:
         run: flutter test
 
       - name: Build Android App Bundle
-        run: flutter build apk --release --split-per-abi
+        run: flutter build apk --release
+
+      - name: Rename Android apk
+        run: mv app-release.apk castle_appraiser_${{steps.yq.outputs.result}}_${{github.run_id}}_${{github.run_number}}.apk
+        working-directory: build/app/outputs/flutter-apk
 
       - name: Publish Android Artifacts
         uses: actions/upload-artifact@v3
         with:
           name: castle_appraiser_${{steps.yq.outputs.result}}_${{github.run_id}}_${{github.run_number}}
-          path: build/app/outputs/apk/release/*.apk
+          path: build/app/outputs/flutter-apk/castle_appraiser_${{steps.yq.outputs.result}}_${{github.run_id}}_${{github.run_number}}.apk
