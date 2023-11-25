@@ -69,4 +69,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: castle_appraiser_${{steps.yq.outputs.result}}_${{github.workflow}}_${{github.run_id}}_${{github.run_number}}
-          path: build/app/outputs/bundle/release/app-x86_64-release.apk
+          path: build/app/outputs/apk/release/app-x86_64-release.apk
