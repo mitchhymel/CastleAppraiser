@@ -68,5 +68,5 @@ jobs:
       - name: Publish Android Artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: castle_appraiser_${{steps.yq.outputs.result}}_${{github.workflow}}_${{github.run_id}}_${{github.run_number}}
-          path: build/app/outputs/apk/release/app-x86_64-release.apk
+          name: castle_appraiser_${{steps.yq.outputs.result}}_${{github.run_id}}_${{github.run_number}}
+          path: build/app/outputs/apk/release/*.apk
