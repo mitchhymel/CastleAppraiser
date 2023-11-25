@@ -62,5 +62,5 @@ jobs:
       - name: Publish Android Artefacts
         uses: actions/upload-artifact@v1
         with:
-          name: release-aab-signed
-          path: build/app/outputs/bundle/release/app-release-signed.aab
+          name: release-aab-${{github.run_id}}
+          path: build/app/outputs/bundle/release/app-release.aab
