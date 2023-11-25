@@ -781,9 +781,9 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: HEAD
+      ref: master
       resolved-ref: "08390592a21211f4b3a94705a6037e7d624fe10d"
-      url: "git://github.com/mitchhymel/flutter_tflite.git"
+      url: "https://github.com/mitchhymel/flutter_tflite.git"
     source: git
     version: "1.1.1"
   timing:
