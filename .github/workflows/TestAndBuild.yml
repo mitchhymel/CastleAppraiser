@@ -59,9 +59,6 @@ jobs:
       - name: Build Android App Bundle
         run: flutter build appbundle --release
 
-      - name: Sign Android App Bundle
-        run: jarsigner -keystore $RUNNER_TEMP/my_production.keystore -storepass ${{ secrets.KEYSTORE_PASSWORD }} -keypass ${{ secrets.KEYSTORE_PASSWORD_ALIAS }} -sigalg SHA256withRSA -digestalg SHA-256 -signedjar build/app/outputs/bundle/release/app-release-signed.aab build/app/outputs/bundle/release/*.aab "mitchell.hymel@gmail.com"
-
       - name: Publish Android Artefacts
         uses: actions/upload-artifact@v1
         with:
