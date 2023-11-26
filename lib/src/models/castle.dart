@@ -1525,6 +1525,10 @@ class Castle {
       return null;
     }
 
+    if (x >= castleTiles.items.length) {
+      return null;
+    }
+
     var tile = castleTiles.items[x];
     if (tile.isEmpty()) {
       return null;

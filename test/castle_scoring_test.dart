@@ -28,6 +28,9 @@ void main() {
 
   test('TwoOfTheSameRoyalAttendants', testTwoOfTheSameRoyalAttendants);
 
+  test('ZZTest', zzTest);
+  test('corridorsTest', corridorsTest);
+
 }
 
 void _testCastleHelper(int expectedScore, GridList<Tile> tiles,
@@ -259,7 +262,6 @@ void testET5() {
   };
   _testCastleHelper(16, tiles, [], expectedScores);
 }
-
 
 void testET6() {
   var tiles = new GridList<Tile>(5, [
@@ -546,7 +548,6 @@ void testG2() {
   _testCastleHelper(55, g2c3, [c2, c4], es3);
   _testCastleHelper(77, g2c4, [c1, c3], es4);
 }
-
 
 void testG3() {
   var g3c1 = new GridList<Tile>(4, [
@@ -907,7 +908,6 @@ void testCastleFromVideo() {
   _testCastleHelper(52, tiles, [], expectedScores);
 }
 
-
 void testFt1() {
   var tiles = new GridList<Tile>(9, [
     Empty(),        Empty(),        CrownStorage(),     Tower(),            Empty(),            Empty(),      Empty(),        Empty(),        Empty(),
@@ -1068,4 +1068,73 @@ void testTwoOfTheSameRoyalAttendants() {
     TileId.SnakePit: 1,
   };
   _testCastleHelper(12, tiles, [], expectedScores);
+}
+
+void zzTest() {
+  var tiles = new GridList<Tile>(7, [
+    Empty(), Empty(), Tower(), Empty(), Empty(), Empty(), Empty(),
+    Empty(), Empty(), TassoRoom(), Tower(), Empty(), Empty(), Empty(),
+    Empty(), Empty(), NapRoom(), ThroughTheWardrobe(), Empty(), Empty(), Empty(),
+    Empty(), Empty(), Brewery(), PowderRoom(), Empty(), Empty(), Empty(),
+    Empty(), Empty(), Salon(), HibernationChamber(), RepairShop(), Empty(), Empty(),
+    PumpkinGarden(), BunkRoom(), DreamingRoom(), ThroneRoomPerFoodSleeping(), SingersChamber(), BowlingAlley(),
+    Empty(), Empty(),TreasureRoom(), HallOfDoors(), Empty(), Empty(), Empty(),
+    Empty(), Empty(), Empty(), JewelRoom(), Empty(), Empty(), Empty()
+  ]);
+  var expectedScores = {
+    TileId.Brewery: 2,
+    TileId.Salon: 3,
+    TileId.PowderRoom: 1,
+    TileId.RepairShop: 0,
+    TileId.PumpkinGarden: 1,
+    TileId.SingersChamber: 2,
+    TileId.BowlingAlley: 2,
+    TileId.HallOfDoors: 1,
+    TileId.TreasureRoom: 3,
+    TileId.JewelRoom: 0,
+    TileId.BunkRoom: 4,
+    TileId.DreamingRoom: 4,
+    TileId.NapRoom: 4,
+    TileId.TassoRoom: 4,
+    TileId.ThroughTheWardrobe: 4,
+    TileId.HibernationChamber: 4,
+    TileId.Tower: 6,
+    TileId.Tower2: 6,
+    TileId.ThroneRoomPerFoodSleeping: 4
+  };
+  _testCastleHelper(55, tiles, [], expectedScores);
+}
+
+void corridorsTest() {
+  var tiles = new GridList<Tile>(6, [
+    Empty(), Empty(), Empty(), Empty(), Schoolhouse(), Empty(),
+    Empty(), Empty(), Empty(), HallOfWindows(), HallOfPortraits(), ChessRoom(),
+    Empty(), InLawSuite(), TentRoom(), EscapeRoom(), AmongTheCurtains(), HatRoom(),
+    WalkingPath(), ThroneRoomPerLivingSleeping(), InTheRafters(), HallOfKnights(), GrandFoyer(),
+    Empty(), Empty(), Armory(), GrandFoyer2(), OutTheWindow(), Crypt(),
+    Empty(), Empty(), Empty(), Empty(), Empty(), SnakePit(),
+  ]);
+  var expectedScores = {
+    TileId.HatRoom: 3,
+    TileId.Schoolhouse: 7,
+    TileId.WalkingPath: 7,
+    TileId.ChessRoom: 2,
+    TileId.HallOfWindows: 4,
+    TileId.HallOfPortraits: 4,
+    TileId.EscapeRoom: 6,
+    TileId.AmongTheCurtains:  6,
+    TileId.InTheRafters: 6,
+    TileId.HallOfKnights: 6,
+    TileId.OutTheWindow: 3,
+    TileId.Crypt: 1,
+    TileId.SnakePit: 1,
+    TileId.Armory: 2,
+    TileId.InLawSuite: 4,
+    TileId.TentRoom: 4,
+    TileId.GrandFoyer: 5,
+    TileId.GrandFoyer2: 5,
+    TileId.RoyalAttendantPainter: 11,
+    TileId.ThroneRoomPerLivingSleeping: 4,
+  };
+  _testCastleHelper(91, tiles, [], expectedScores);
 }
